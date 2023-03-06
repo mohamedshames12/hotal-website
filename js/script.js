@@ -9,3 +9,14 @@ menu.addEventListener("click", (e) => {
 window.onscroll = () => {
     navbar.classList.remove("active");
 }
+
+const user = document.getElementById("user");
+const containerUser = document.querySelector(".container-user");
+
+user.addEventListener("click", (e) => {
+    containerUser.classList.toggle("active");
+})
+
+window.onscroll = () => {
+    containerUser.classList.remove("active");
+}

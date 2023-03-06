@@ -653,6 +653,85 @@ header{
     background: red;
 }
 
+.user{
+    position: relative;
+    
+}
+
+.container-user{
+    position: absolute;
+    width: 200px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #001d3d;
+    top: 45px;
+    z-index: 1000;
+    left: -100px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+
+.container-user.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.container-user h3{
+    font-size: 1rem;
+    letter-spacing: .3px;
+    text-transform: capitalize;
+    color: #001d3d;
+    text-align: center;
+}
+
+.update{
+    display: flex;
+    margin: 1rem 0;
+    height: 35px;
+    width: 100%;
+    background: #023047;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.update:hover{
+    background: #457b9d;
+}
+
+.auth{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth a{
+    background: #2a9d8f;
+    width: 48%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.auth a:hover{
+    background: #0a7367;
+}
+
+.auth .out{
+    background-color: #d62828;
+}
+
+.auth .out:hover{
+    background: #ef233c;
+}
+
 @media (max-width: 768px) {
     .navbar{
         position: absolute;
@@ -769,6 +848,4 @@ header{
         right: 2.5rem;
         top: 0px;
     }
-    
-
 }
